@@ -1,0 +1,27 @@
+.navbar navbar-expand-sm bg-dark{
+    padding: 10px;
+}
+.degin1{
+    border-radius: 10px;
+    margin-right: 20px;
+
+}
+.degin2{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 200px;
+    width: 70px;
+}
+.degin2:hover{
+    background-color: rgb(255, 14, 14);
+    text-decoration: none;
+    margin-left: 200px;
+    width: 70px;
+}
+.margin-right{
+    margin-right: 10px;
+}
+.im{
+    width: 100px;
+    height:100px;
+}

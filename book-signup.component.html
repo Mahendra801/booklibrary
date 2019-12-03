@@ -1,0 +1,19 @@
+<div class="container-fluid text-center">
+    <h1>
+        <fieldset class="field"> signup page</fieldset>
+    </h1>
+</div>
+<div class="container">
+    <div class="degin">
+            <form [formGroup]="sin"><br>
+                    <p style="margin-left: 20px;"> name<input type="text" name="name"  formControlName="name" placeholder="FirstName" style="margin-left: 35px;"></p>
+                    <p style="margin-left: 20px;"> phone<input type="number" name="number" formControlName="mobilenumber" placeholder="phone number" style="margin-left: 28px;"></p>
+                    <p style="margin-left: 20px;">address<input type="text"  name="address" formControlName="address" placeholder="address" style="margin-left: 20px;"></p>
+                    <p style="margin-left: 20px;"> email<input type="email"  name="email" fromControlName="email" placeholder="user email" style="margin-left: 35px;"></p>
+                    <p style="margin-left: 20px;">Password<input type="password" name="password" formControlName="password" placeholder="password" style="margin-left: 10px;"></p>
+                    
+                    <button (click)="signup(sin)" style="margin-left: 120px;">SIGNUP</button>
+              <p style="margin-left: 70px;color: rgb(241, 240, 240);">Already an Account?<label routerLink="/booklogin">login</label> </p>
+                </form>
+    </div>
+</div>

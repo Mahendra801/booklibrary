@@ -1,0 +1,28 @@
+<section class="section-1">
+    <div class="container-fluid">
+        <div class="navbar navbar-expand-sm bg-dark">
+            <a href="http://localhost:4200/#"><img src="../../assets/559404-istock-512966920_0.webp" alt="ssd" width="150px;" height="50px"
+                    class="degin1" style="background-color: red;"></a>
+            <h3 class="text-primary">BOOK STORE</h3>&nbsp;
+            <button class="degin2" [routerLink]="['/booklogin']">login</button>
+        </div>
+    </div>
+</section>
+<section class="section-2">
+    <div *ngFor="let book of library">
+        <div class="container">
+            <div class="col-sm-3" style="padding: 10px;margin-top: 5px;float:left; border-radius: 20px;">
+                <div class="card" style="width: 150px; border: 20px solid rgb(201, 92, 165); border-radius: 30px;">
+                    
+                        <img src="{{book.book.book_url}}" alt="img" class="im"
+                             (click)="bookdetail(book.book)">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!-- <p>{{book.author.id}}<br>{{book.author.address}}<br>{{book.author.email}}<br>{{book.author.id}}<br>{{book.author.name}}</p>
+   <p>{{book.book.book_url}}<br>{{book.book.created}}<br>{{book.book.description}}<br>{{book.book.id}}<br>{{book.book.title}}<br>{{book.book.updated}}</p> -->

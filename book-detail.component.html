@@ -1,0 +1,37 @@
+<body style="background-color: rgb(226, 252, 216);">
+    <br>
+<section class="section-1">
+    <div class="container-fluid">
+        <div class="navbar navbar-expand-sm bg-info">
+            <a href="http://localhost:4200/#"><img src="../../assets/559404-istock-512966920_0.webp" alt="ssd" width="100px;" height="10px"
+                    class="degin1"></a>
+            <h3 class="text-white">bookdetails</h3>
+        </div>
+    </div>
+</section><br>
+<div class="container">
+    <div class="card">
+            <img src="{{library['book_url']}}" class="img">
+<div class="card-body">
+        <p> <strong>id:</strong>{{library['id']}}</p>
+        <p><strong>title:</strong>{{library['title']}}</p>
+        <p> <strong>created:</strong>{{library['created']}}</p>
+        <p><strong>price:</strong>{{library['price']}}</p>
+        <p><strong>updated:</strong>{{library['updated']}}</p>
+        <p><strong>description:</strong>{{library['description']}}</p>
+        <button (click)="buy()" class="bgcolor">Buy</button>
+</div> 
+    </div>
+    <br>
+</div>
+
+</body>
+
+
+<!-- <p>{{book.author.email}}</p>
+    <p>{{book.author.name}}</p>
+    <img src="{{book.book.book_url}}" alt="img" width="40px" height="40px">
+    <p>{{book.book.created}}</p>
+    <p>{{book.book.description}}</p>
+    <p>{{book.book.id}}</p>
+    <p>{{book.book.title}}</p> -->

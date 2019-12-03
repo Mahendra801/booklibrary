@@ -1,0 +1,21 @@
+<div class="container-fluid text-center">
+    <h1>
+        <fieldset class="field"> login page</fieldset>
+    </h1>
+</div>
+<div class="container">
+    <div class="degin">
+        <form [formGroup]="log">
+            <label class="pt1">email</label>
+            <input type="email" name="email" class="input1" fromControlName="email" placeholder="user email"><br>
+            <label class="pt2">Password</label>
+            <input type="password" name="password" class="input2" formControlName="password" placeholder="password"><br><br>
+            <button (click)="login(log)" class="login bg-success" style="margin-left: 135px;">login</button>
+            <br><br>
+            <p style="margin-left: 60px; color: rgb(241, 240, 240);">Don't Have an Account?<label routerLink="/booksignup">Signup</label> </p>
+        </form>
+    </div>
+</div>
+<!-- router links
+<button  [routerLink]="['/bookhome']"></button>
+<label routerLink="/booksignup">Signup</label> -->
